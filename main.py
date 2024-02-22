@@ -1,6 +1,7 @@
 import os
 import json
 import math
+import time
 from lexer import Lexer
 
 
@@ -77,4 +78,7 @@ def main():
 
 
 if __name__ == "__main__":
+    start = time.time()
     main()
+    end = time.time()
+    print(f"Time: {end - start}ms")
